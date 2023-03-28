@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoRestController {
 
     // define a private field for the dependency
-    private final Coach myCoach;
+    private Coach myCoach;
 
     // define a constructor for the dependency injection
 
@@ -18,7 +18,7 @@ public class DemoRestController {
 //        myCoach = theCoach;
 //    }
 
-    // define a setter method for perfoming the setter injection using the @Autowired annotation
+    // define a setter method for performing the setter injection using the @Autowired annotation
     public String setCoach(Coach theCoach) {
         myCoach = theCoach;
     }
