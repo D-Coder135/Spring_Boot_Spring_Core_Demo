@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 public class BaseballCoach implements Coach {
     @Override
     public String getDailyWorkout() {
-        return null;
+        return "Practice 1hr baseball daily.";
     }
 }
