@@ -1,4 +1,4 @@
-package com.decoder135.springcoredemo;
+package com.decoder135.springcoredemo.common;
 
 import org.springframework.stereotype.Component;
 
