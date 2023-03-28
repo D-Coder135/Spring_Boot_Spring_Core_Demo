@@ -1,4 +1,4 @@
 package com.decoder135.springcoredemo.common;
 
-public class TennisCoach {
+public class TennisCoach implements Coach{
 }
