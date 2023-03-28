@@ -13,10 +13,10 @@ public class DemoRestController {
 
     // define a constructor for the dependency injection
 
-//    @Autowired
-//    public DemoRestController(Coach theCoach) {
-//        myCoach = theCoach;
-//    }
+    @Autowired
+    public DemoRestController(Coach theCoach) {
+        myCoach = theCoach;
+    }
 
     // define a setter method for performing the setter injection using the @Autowired annotation
 //    @Autowired
