@@ -11,7 +11,7 @@ public class DemoRestController {
     // define a constructor for the dependency injection
 
     public DemoRestController(Coach theCoach) {
-
+        myCoach = theCoach;
     }
 
 
