@@ -19,6 +19,9 @@ public class DemoRestController {
 //    }
 
     // define a setter method for perfoming the setter injection using the @Autowired annotation
+    public String setCoach(Coach theCoach) {
+
+    }
 
     @GetMapping("/dailyworkout")
     public String getDailyWorkout() {
