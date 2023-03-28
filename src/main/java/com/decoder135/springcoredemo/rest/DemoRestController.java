@@ -19,7 +19,7 @@ public class DemoRestController {
 //    }
 
     // define a setter method for performing the setter injection using the @Autowired annotation
-    public String setCoach(Coach theCoach) {
+    public void setCoach(Coach theCoach) {
         myCoach = theCoach;
     }
 
