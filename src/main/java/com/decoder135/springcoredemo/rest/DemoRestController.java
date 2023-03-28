@@ -1,4 +1,4 @@
-package com.decoder135.springcoredemo;
+package com.decoder135.springcoredemo.rest;
 
 import com.decoder135.springcoredemo.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
