@@ -2,6 +2,7 @@ package com.decoder135.springcoredemo.rest;
 
 import com.decoder135.springcoredemo.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,7 +15,7 @@ public class DemoRestController {
     // define a constructor for the dependency injection
 
     @Autowired
-    public DemoRestController(Coach theCoach) {
+    public DemoRestController(@Qualifier("cricketCoach") Coach theCoach) {
         myCoach = theCoach;
     }
 
