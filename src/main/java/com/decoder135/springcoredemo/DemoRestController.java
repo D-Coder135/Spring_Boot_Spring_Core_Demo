@@ -16,5 +16,8 @@ public class DemoRestController {
         myCoach = theCoach;
     }
 
+    public String getDailyWorkout() {
+
+    }
 
 }
