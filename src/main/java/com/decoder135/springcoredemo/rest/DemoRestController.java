@@ -13,10 +13,10 @@ public class DemoRestController {
 
     // define a constructor for the dependency injection
 
-    @Autowired
-    public DemoRestController(Coach theCoach) {
-        myCoach = theCoach;
-    }
+//    @Autowired
+//    public DemoRestController(Coach theCoach) {
+//        myCoach = theCoach;
+//    }
 
     @GetMapping("/dailyworkout")
     public String getDailyWorkout() {
