@@ -17,7 +17,7 @@ public class DemoRestController {
     // NOTE: The default scope for a bean is always Singleton, i.e., All dependency injections for the bean will
     // reference the SAME bean instance.
     @Autowired
-    public DemoRestController(@Qualifier("cricketCoach") Coach theCoach) {
+    public DemoRestController(@Qualifier("swimCoach") Coach theCoach) {
         myCoach = theCoach;
     }
 
