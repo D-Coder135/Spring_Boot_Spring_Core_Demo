@@ -11,6 +11,7 @@ public class DemoRestController {
 
     // define a private field for the dependency
     private Coach myCoach;
+    private Coach anotherCoach;
 
     // define a constructor for the dependency injection
 
