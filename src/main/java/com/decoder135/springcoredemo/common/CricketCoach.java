@@ -1,6 +1,7 @@
 package com.decoder135.springcoredemo.common;
 
 import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
@@ -17,6 +18,10 @@ public class CricketCoach implements Coach{
         System.out.println("In doMyStartupStuff(): " + getClass().getSimpleName());
     }
     // define our destroy method
+    @PreDestroy
+    public void doMyCleanUpStuff() {
+        System.out.println("In doMyCleanUpStuff(): " + getClass().getSimpleName());
+    }
 
     @Override
     public String getDailyWorkout() {
