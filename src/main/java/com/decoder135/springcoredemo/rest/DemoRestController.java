@@ -15,6 +15,8 @@ public class DemoRestController {
 
     // define a constructor for the dependency injection
 
+    // NOTE: The default scope for a bean is always Singleton, i.e., All dependency injections for the bean will
+    // reference the SAME bean instance.
     @Autowired
     public DemoRestController(@Qualifier("baseballCoach") Coach theCoach,
                               @Qualifier("baseballCoach") Coach theAnotherCoach) {
