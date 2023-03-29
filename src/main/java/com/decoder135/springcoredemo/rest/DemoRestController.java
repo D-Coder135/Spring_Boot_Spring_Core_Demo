@@ -11,17 +11,14 @@ public class DemoRestController {
 
     // define a private field for the dependency
     private Coach myCoach;
-    private Coach anotherCoach;
 
     // define a constructor for the dependency injection
 
     // NOTE: The default scope for a bean is always Singleton, i.e., All dependency injections for the bean will
     // reference the SAME bean instance.
     @Autowired
-    public DemoRestController(@Qualifier("cricketCoach") Coach theCoach,
-                              @Qualifier("cricketCoach") Coach theAnotherCoach) {
+    public DemoRestController(@Qualifier("cricketCoach") Coach theCoach) {
         myCoach = theCoach;
-        anotherCoach = theAnotherCoach;
     }
 
     // define a setter method for performing the setter injection using the @Autowired annotation
@@ -33,11 +30,6 @@ public class DemoRestController {
     @GetMapping("/dailyworkout")
     public String getDailyWorkout() {
         return myCoach.getDailyWorkout();
-    }
-
-    @GetMapping("/check")
-    public String check() {
-        return "Comparing beans: myCoach == anotherCoach, " + (myCoach == anotherCoach);
     }
 
 }
