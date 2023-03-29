@@ -11,7 +11,9 @@ import org.springframework.stereotype.Component;
 public class CricketCoach implements Coach{
 
     // define our init method
+    public void doMyStartupStuff() {
 
+    }
     // define our destroy method
 
     @Override
