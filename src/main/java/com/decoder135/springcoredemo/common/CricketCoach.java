@@ -12,7 +12,7 @@ public class CricketCoach implements Coach{
 
     // define our init method
     public void doMyStartupStuff() {
-
+        System.out.println("In doMyStartupStuff(): " + getClass().getSimpleName());
     }
     // define our destroy method
 
