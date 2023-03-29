@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 //@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class CricketCoach implements Coach{
 
-    // define our init method
+   /* // define our init method
     @PostConstruct
     public void doMyStartupStuff() {
         System.out.println("In doMyStartupStuff(): " + getClass().getSimpleName());
@@ -18,7 +18,7 @@ public class CricketCoach implements Coach{
     @PreDestroy
     public void doMyCleanUpStuff() {
         System.out.println("In doMyCleanUpStuff(): " + getClass().getSimpleName());
-    }
+    }*/
 
     @Override
     public String getDailyWorkout() {
