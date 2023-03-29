@@ -1,5 +1,6 @@
 package com.decoder135.springcoredemo.common;
 
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Component;
 public class CricketCoach implements Coach{
 
     // define our init method
+    @PostConstruct
     public void doMyStartupStuff() {
         System.out.println("In doMyStartupStuff(): " + getClass().getSimpleName());
     }
