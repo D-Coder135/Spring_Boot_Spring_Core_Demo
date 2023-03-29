@@ -35,4 +35,6 @@ public class DemoRestController {
         return myCoach.getDailyWorkout();
     }
 
+    @GetMapping("/check")
+
 }
