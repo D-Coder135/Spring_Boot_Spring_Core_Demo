@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 // For Prototype scope of a bean, a new object instance is created for each injection.
-@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+//@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class CricketCoach implements Coach{
     @Override
     public String getDailyWorkout() {
